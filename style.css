@@ -1,0 +1,21 @@
+/* fundo com um gradiente escuro com roxo */
+:root{
+    --white: #fff;
+    --dark1: #34344e;
+    --dark2: #3a415a;
+    --dark3: #566981;
+    --dark4: #89a7b1;
+    --dark5: #cbdad5;
+}
+
+body{
+    background: linear-gradient(to right, var(--dark1), var(--dark2));
+    background-size: 400%;
+    height: 100vh;
+    margin: 0;
+}
+
+img{
+    max-width: 400px;
+    border-radius: 50%;
+}
