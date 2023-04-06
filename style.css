@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--dark1);
+    background: var(--dark2);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -44,7 +44,6 @@ header{
 
 .img-logo{
     max-width: 80px;
-    border-radius: 50%;
 }
 
 nav{
@@ -71,15 +70,18 @@ nav{
     gap: 1rem;
 }
 
-.btn-action{
-    background-color: transparent;
-    border: 1px solid var(--white);
-    color: var(--white);
+button{
     padding: .6rem;
     font-size: .9rem;
     border-radius: 6px;
     cursor: pointer;
     transition: .4s;
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
 }
 
 .btn-action:hover{
@@ -111,17 +113,60 @@ main{
 h1{
     font-size: 4rem;
     letter-spacing: 8px;
-    color: var(--white)
+    color: var(--white);
+    margin: 0;
 }
 
-h1 strong{
+strong{
     color: var(--cyan1);
 }
 
+.first-section p{
+    color: var(--white);
+}
 
+.first-section button{
+    width: 200px;
+}
 
 .img-perfil{
     max-width: 400px;
     border-radius: 50%;
+}
+
+.second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--dark2);
+    min-height: 200px;
+}
+
+.second-section h2{
+    text-align: center;
+    color: var(--dark5);
+    margin: 0;
+}
+
+.second-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.second-section p{
+    color: var(--dark4);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.second-section p:hover{
+    color: var(--dark5);
+    transition: .4s;
+    cursor: default;
 }
 
