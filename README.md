@@ -1,2 +1,2 @@
 # basic-landing-page
-Landing Page with HTML, CSS, JavaScript and PHP.
+Landing Page with HTML, CSS, JavaScript and PHP. 
