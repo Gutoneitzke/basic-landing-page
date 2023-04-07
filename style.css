@@ -39,17 +39,18 @@ header{
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: .8rem;
     background-color: #2f2f46;
-    height: 50px;
+    min-height: 50px;
 }
 
-.box-img{
+.box-img-header{
     height: 100%;
 }
 
 .img-logo{
     height: 100%;
+    max-height: 60px;
 }
 
 nav{
@@ -99,21 +100,24 @@ button{
 main{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .first-section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
-    height: 650px;
+    gap: 2rem;
+    min-height: 650px;
+    padding: 2rem;
+    flex-wrap: wrap;
 }
 
-.first-section div{
+.first-section > div{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    min-width: 300px;
 }
 
 h1{
@@ -135,8 +139,13 @@ strong{
     width: 200px;
 }
 
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
 .img-perfil{
-    max-width: 400px;
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -148,6 +157,7 @@ strong{
     gap: 1rem;
     background-color: var(--dark2);
     min-height: 200px;
+    padding: 1rem;
 }
 
 .second-section h2{
