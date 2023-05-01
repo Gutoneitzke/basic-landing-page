@@ -240,3 +240,16 @@ strong{
     box-shadow: 1px 1px 1px 1px var(--cyan1);
 }
 
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
