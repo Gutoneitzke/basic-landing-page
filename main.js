@@ -24,6 +24,7 @@ function showProjects(data){
         let a = document.createElement("a")
         a.href = data[i]['clone_url']
         a.target = '_blank'
+        a.title = data[i]['description']
         let linkText = document.createTextNode(data[i]['name']);
         a.appendChild(linkText);
         div.appendChild(a)

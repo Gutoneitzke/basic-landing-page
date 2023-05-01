@@ -236,3 +236,7 @@ strong{
     color: var(--dark4);
 }
 
+img{
+    box-shadow: 1px 1px 1px 1px var(--cyan1);
+}
+
