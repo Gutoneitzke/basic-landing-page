@@ -156,7 +156,7 @@ strong{
     padding: 1rem;
 }
 
-.img-perfil{
+.img-profile{
     width: 100%;
     border-radius: 50%;
 }
@@ -236,7 +236,7 @@ strong{
     color: var(--dark4);
 }
 
-img{
+:is(.img-profile,.img-who-am-i){
     box-shadow: 1px 1px 1px 1px var(--cyan1);
 }
 
