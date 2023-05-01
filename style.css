@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato');
+
 :root{
     --white: #fff;
     --dark1: #34344e;
@@ -7,6 +8,11 @@
     --dark4: #89a7b1;
     --dark5: #cbdad5;
     --cyan1: #70e3ea;
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +35,6 @@ body{
     background-color: var(--dark1);
     background-size: 400%;
     height: 100vh;
-    margin: 0;
     font-family: 'Lato';
 }
 
@@ -103,13 +108,16 @@ main{
     gap: 2rem;
 }
 
+section{
+    padding: 4rem;
+}
+
 .first-section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
     min-height: 650px;
-    padding: 2rem;
     flex-wrap: wrap;
 }
 
@@ -124,7 +132,6 @@ h1{
     font-size: 4rem;
     letter-spacing: 8px;
     color: var(--white);
-    margin: 0;
 }
 
 strong{
@@ -150,20 +157,15 @@ strong{
 }
 
 .second-section{
+    background-color: var(--dark2);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
-    background-color: var(--dark2);
-    min-height: 200px;
-    padding: 1rem;
+    align-items: center;
 }
 
-.second-section h2{
-    text-align: center;
+.title{
     color: var(--dark5);
-    margin: 0;
 }
 
 .second-section div{
@@ -184,5 +186,29 @@ strong{
     color: var(--dark5);
     transition: .4s;
     cursor: default;
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.third-section > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.third-section > div img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.third-section > div p{
+    max-width: 600px;
+    color: var(--white);
 }
 
