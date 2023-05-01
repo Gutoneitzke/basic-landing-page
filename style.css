@@ -82,7 +82,7 @@ nav{
     gap: 1rem;
 }
 
-button{
+:is(button,.link-action){
     padding: .6rem;
     font-size: .9rem;
     border-radius: 6px;
@@ -99,7 +99,12 @@ button{
 .btn-action:hover{
     background-color:  var(--dark3);
     border: 1px solid var(--dark3);
+}
 
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
 }
 
 main{
@@ -156,7 +161,7 @@ strong{
     border-radius: 50%;
 }
 
-.second-section{
+:is(.second-section, .fourth-section){
     background-color: var(--dark2);
     display: flex;
     flex-direction: column;
@@ -191,7 +196,7 @@ strong{
 .third-section{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .third-section > div{
@@ -210,5 +215,24 @@ strong{
 .third-section > div p{
     max-width: 600px;
     color: var(--white);
+}
+
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#my-projects-list a{
+    text-decoration: none;
+    color: var(--dark3);
+}
+
+#my-projects-list a:hover{
+    transition: .4s;
+    color: var(--dark4);
 }
 
