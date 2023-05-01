@@ -1,5 +1,6 @@
 function getProjects(){
     const urlGitHub = 'https://api.github.com/users/Gutoneitzke/repos'
+    var loadingElement = document.getElementById('loading')
 
     fetch(urlGitHub,{
         method: 'GET',
@@ -8,6 +9,7 @@ function getProjects(){
         .then((response) => {
             console.log(response)
             showProjects(response)
+            loadingElement.style.display = 'none'
         })
         .catch((e) => {
             console.log(`Error -> ${e}`)
@@ -22,6 +24,7 @@ function showProjects(data){
         let a = document.createElement("a")
         a.href = data[i]['clone_url']
         a.target = '_blank'
+        a.title = data[i]['description']
         let linkText = document.createTextNode(data[i]['name']);
         a.appendChild(linkText);
         div.appendChild(a)
